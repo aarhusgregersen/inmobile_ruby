@@ -1,6 +1,6 @@
-require "inmobile/version"
+libdir = File.dirname(__FILE__)
+$LOAD_PATH.unshift(libdir) unless $LOAD_PATH.include?(libdir)
 
-module Inmobile
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require 'inmobile/version'
+require 'inmobile/base'
+require 'inmobile/message'
